@@ -1,0 +1,21 @@
+const mercuryUsers = require('./mercury-users/mercury-users.service.js');
+const permissions = require('./permissions/permissions.service.js');
+const usersPermissionsTable = require('./users-permissions-table/users-permissions-table.service.js');
+const languages = require('./languages/languages.service.js');
+const sentMessages = require('./sent-messages/sent-messages.service.js');
+const groups = require('./groups/groups.service.js');
+const recipientsGroupsTable = require('./recipients-groups-table/recipients-groups-table.service.js');
+const recipients = require('./recipients/recipients.service.js');
+const providerCapabilities = require('./provider-capabilities/provider-capabilities.service.js');
+module.exports = function () {
+	const app = this;
+	app.configure(mercuryUsers);
+	app.configure(permissions);
+	app.configure(usersPermissionsTable);
+	app.configure(languages);
+	app.configure(sentMessages);
+	app.configure(groups);
+	app.configure(recipientsGroupsTable);
+	app.configure(recipients);
+	app.configure(providerCapabilities);
+};
