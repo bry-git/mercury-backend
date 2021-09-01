@@ -8,6 +8,6 @@
   },
   "postgres": {
     "client": "pg",
-    "connection": "postgres://admin:password@mercury_db_1:5432/postgres"
+    "connection": "postgres://admin:password@mercury_capstone_db_1:5432/postgres"
   }
 }
