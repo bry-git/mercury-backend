@@ -3,7 +3,7 @@
 module.exports = {
 	development: {
 		client: 'postgres',
-		connection: 'postgres://admin:password@mercury_db_1:5432/postgres'
+		connection: 'postgres://admin:password@mercury_capstone_db_1:5432/postgres'
 	},
 
 	staging: {
